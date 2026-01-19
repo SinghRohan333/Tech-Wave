@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css pattern which won't break across ranges started*/
+
+/* Prevent overflow issues */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* css pattern which won't break across ranges ended*/
+
+body {
+  font-family: "Inter", sans-serif;
+}
+header {
+  background-color: #1a0b2e;
+  border-bottom: 1px solid #412567;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+nav section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav section ul li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+.nav-btn-icon {
+  color: white;
+  text-align: center;
+}
+.toogle-show {
+  display: none;
+}
+.tech {
+  color: white;
+}
+.wave {
+  background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.banner {
+  background-image: url("../assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  /* height: 60vmax; */
+}
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+}
+.hero-circle {
+  position: relative;
+  background-image: url("../assets/hero-circle.png");
+  width: clamp(180px, 30vw, 300px);
+  /* width: 30vw; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  margin-bottom: 1.25rem;
+}
+.hero-circle span {
+  background-color: #00ff88;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #1a0b2e;
+  border: 1px solid #1a0b2e;
+  text-align: center;
+  position: absolute;
+  top: 6%;
+  right: -6%;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+}
+.hero-circle img {
+  width: 40%;
+}
+.hero-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.hero-txt h2 {
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+}
+.hero-txt p {
+  text-align: center;
+  font-size: 0.85rem;
+  width: 80%;
+  color: rgba(255, 255, 255, 0.822);
+}
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.spotify,
+.subscribe {
+  background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+  display: flex;
+  gap: 0.05rem;
+  padding: 0.45rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.spotify div,
+.subscribe div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spotify div img,
+.subscribe div img {
+  width: 70%;
+}
+.spotify div p,
+.subscribe div p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subscribe div p {
+  color: #00ff88;
+}
+.subscribe {
+  border: 1px solid #00ff88;
+  background: transparent;
+}
+
+/* responsiveness started */
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .toogle-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav section h3 {
+    font-size: 1.5rem;
+  }
+  .hero-circle span {
+    right: 1%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-circle span {
+    right: 6%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-circle {
+    width: clamp(180px, 30vw, 350px);
+  }
+  .hero-circle span {
+    right: 9%;
+  }
+  .spotify,
+  .subscribe {
+    padding: 1.05rem 1.25rem;
+    border-radius: 1.25rem;
+  }
+  nav section h3 {
+    font-size: 1.85rem;
+  }
+  .hero-txt h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-circle {
+    width: clamp(250px, 40vw, 450px);
+  }
+  .hero-circle span {
+    padding: 0.85rem 1.25rem;
+    font-size: 1.45rem;
+    right: 7%;
+  }
+}
