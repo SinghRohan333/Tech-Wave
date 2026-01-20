@@ -170,7 +170,77 @@ nav section ul li {
   background: transparent;
 }
 
+.about-container {
+  padding: 2.5rem 1.25rem;
+  background-color: #1a0b2e;
+  /* border: 1px solid red; */
+}
+.about-txt-container {
+  /* padding: 2rem; */
+  color: white;
+  /* border: 2px solid blue; */
+  margin-bottom: 1.5rem;
+}
+/* .about-txt-container section {
+  border: 3px solid green;
+} */
+.about-txt-container section h1 {
+  font-size: 1.45rem;
+  text-align: center;
+}
+.about-txt-container section p {
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.822);
+}
+.about-heading {
+  margin-bottom: 1.5rem;
+}
+hr {
+  border-color: #1a0b2e6e;
+}
+.statistics-container {
+  /* border: 2px solid blue; */
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  place-items: center;
+}
+.statistics div {
+  /* border: 2px solid red; */
+  text-align: center;
+}
+.statistics div h2 {
+  color: #00ff88;
+  font-weight: bolder;
+  font-size: 1.75rem;
+}
+.statistics div p {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 0.85rem;
+}
+
 /* responsiveness started */
+@media screen and (min-width: 480px) {
+  .about-txt-container section p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .about-txt-container section p {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hamburger-menu {
     display: none;
@@ -185,6 +255,14 @@ nav section ul li {
   }
   .hero-circle span {
     right: 1%;
+  }
+  .statistics {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .about-txt-container section p {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
@@ -211,6 +289,18 @@ nav section ul li {
   }
   .hero-txt h2 {
     font-size: 2.2rem;
+  }
+  .about-txt-container section h1 {
+    font-size: 2.2rem;
+  }
+  .about-txt-container section p {
+    font-size: 1rem;
+  }
+  .statistics div h2 {
+    font-size: 2rem;
+  }
+  .statistics div p {
+    font-size: 1rem;
   }
 }
 
