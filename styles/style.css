@@ -226,11 +226,87 @@ hr {
   font-size: 0.85rem;
 }
 
+.feature-host-container {
+  padding: 2rem 1.25rem;
+  /* border: 1px solid red; */
+  background-color: #1a0b2ef5;
+}
+
+.feature-container {
+  /* border: 2px solid blue; */
+  padding: 2rem;
+}
+.feature-container section h1 {
+  text-align: center;
+  font-size: 1.45rem;
+  color: white;
+}
+.iFrame {
+  border-radius: 1.5rem;
+}
+.iFrame iframe {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.featureHead {
+  margin-bottom: 1.5rem;
+}
+.card-container {
+  /* border: 2px solid green; */
+  /* border-radius: 1.5rem; */
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+.video-txt-container {
+  padding: 0.25rem;
+}
+.video-txt-container h2 {
+  font-size: 0.95rem;
+  /* text-align: center; */
+  color: white;
+  margin-bottom: 0.3rem;
+}
+.video-txt-container p {
+  text-align: justify;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.822);
+}
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.card {
+  border: 3px solid #1a0b2e;
+  border-radius: 1.5rem;
+}
+
 /* responsiveness started */
 @media screen and (min-width: 480px) {
   .about-txt-container section p {
     width: 80%;
     margin: 0 auto;
+  }
+  .video-txt-container p {
+    width: 90%;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .video-txt-container h2 {
+    font-size: 1.25rem;
+  }
+  .card {
+    width: 85%;
   }
 }
 
@@ -238,6 +314,15 @@ hr {
   .about-txt-container section p {
     width: 70%;
     margin: 0 auto;
+  }
+  .card {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .card {
+    width: 65%;
   }
 }
 
@@ -263,6 +348,20 @@ hr {
   .about-txt-container section p {
     width: 60%;
     margin: 0 auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .video-txt-container p {
+    text-align: left;
+  }
+  .video-txt-container h2 {
+    font-size: 0.95rem;
   }
 }
 
@@ -301,6 +400,18 @@ hr {
   }
   .statistics div p {
     font-size: 1rem;
+  }
+  .feature-container section h1 {
+    font-size: 2.2rem;
+  }
+  .video-txt-container h2 {
+    font-size: 1.05rem;
+  }
+  .card {
+    width: 90%;
+  }
+  .card-container {
+    gap: 0.05rem;
   }
 }
 
