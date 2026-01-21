@@ -229,7 +229,7 @@ hr {
 .feature-host-container {
   padding: 2rem 1.25rem;
   /* border: 1px solid red; */
-  background-color: #1a0b2ef5;
+  background-color: #1a0b2e;
 }
 
 .feature-container {
@@ -288,8 +288,12 @@ hr {
   font-size: 0.85rem;
 }
 .card {
-  border: 3px solid #1a0b2e;
+  border: 3px solid rgba(53, 17, 101, 0.4);
   border-radius: 1.5rem;
+  background-color: rgba(53, 17, 101, 0.4);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.45),
+    0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .host-container {
@@ -433,6 +437,65 @@ footer {
 }
 .foot-social-layout section p {
   font-size: 0.75rem;
+}
+.choose-container {
+  padding: 1.5rem 0.45rem;
+  background-color: #230e3d;
+}
+.choose-heading {
+  margin-bottom: 1.25rem;
+}
+.choose-heading h1 {
+  text-align: center;
+  font-size: 1.45rem;
+  color: white;
+}
+.choose-card-container {
+  /* border: 1px solid red; */
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(1, fr);
+  place-items: center;
+  gap: 1.25rem;
+}
+.choose-card {
+  /* border: 2px solid blue; */
+  padding: 0.25rem;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 1.5rem;
+  border: none;
+}
+.choose-card div {
+  padding-left: 0.7rem;
+}
+.choose-card-fig {
+  padding-top: 1rem;
+  width: 70%;
+  margin-bottom: 0.45rem;
+}
+.choose-card-head {
+  margin-bottom: 0.85rem;
+}
+.choose-card-head h2 {
+  font-size: 1.25rem;
+  color: white;
+  line-height: 1.7;
+}
+.choose-card-txt {
+  margin-bottom: 1.25rem;
+}
+.choose-card-txt p {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 0.85rem;
+}
+.txt-hidden {
+  display: none;
+}
+.bottom-row {
+  display: grid;
+  /* grid-column: span 2; */
+  /* grid-template-columns: 3fr 2fr; */
+  gap: 1.25rem;
 }
 /* responsiveness started */
 @media screen and (min-width: 480px) {
@@ -579,6 +642,28 @@ footer {
   .foot-social-layout section p {
     font-size: 0.85rem;
   }
+  .choose-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+  .tall {
+    grid-row: span 2;
+  }
+  .audio-quality-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .txt-hidden {
+    display: inline;
+  }
+  .bottom-row {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: 3fr 2fr;
+    gap: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -653,6 +738,9 @@ footer {
   }
   footer {
     padding: 2.5rem;
+  }
+  .choose-heading h1 {
+    font-size: 2.2rem;
   }
 }
 
