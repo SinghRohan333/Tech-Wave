@@ -363,6 +363,77 @@ hr {
 .alex-container-laptop {
   display: none;
 }
+.cursorCls {
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-3px);
+}
+button:active {
+  transform: translateY(1px);
+}
+
+footer {
+  background-image: url("../assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  padding: 1.05rem;
+}
+.project-foot {
+  display: grid;
+  place-items: center;
+  /* padding: 1.2rem; */
+  /* margin-bottom: 3rem; */
+}
+.foot-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 0.25rem;
+  /* border: 2px solid red; */
+  /* padding: 1.25rem; */
+  margin-bottom: 1.2rem;
+}
+.foot-social-layout {
+  display: flex;
+  /* gap: 0.5rem; */
+  align-items: center;
+  cursor: pointer;
+}
+.foot-social-layout img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.foot-head {
+  margin-bottom: 0.3rem;
+}
+.foot-head h3 {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+.foot-social-layout section p {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 0.55rem;
+}
+.copyright {
+  /* padding: 2rem 0; */
+  text-align: center;
+  /* background-color: #230e3d; */
+  width: 60%;
+  /* border: 3px solid red; */
+}
+.copyright p {
+  font-size: 0.5rem;
+  color: rgba(255, 255, 255, 0.822);
+  letter-spacing: 0.02rem;
+}
+.foot-social-layout section p {
+  font-size: 0.75rem;
+}
 /* responsiveness started */
 @media screen and (min-width: 480px) {
   .about-txt-container section p {
@@ -389,6 +460,9 @@ hr {
   }
   .card {
     width: 75%;
+  }
+  .foot-social-layout img {
+    width: 70%;
   }
 }
 
@@ -487,6 +561,24 @@ hr {
     margin-top: 1.5rem;
     padding-bottom: 1.25rem;
   }
+  .foot-social {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .copyright p {
+    font-size: 0.65rem;
+  }
+  .copyright {
+    width: 80%;
+  }
+  .foot-head h3 {
+    font-size: 2.2rem;
+  }
+  .foot-social-layout img {
+    width: 80%;
+  }
+  .foot-social-layout section p {
+    font-size: 0.85rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -551,6 +643,16 @@ hr {
   }
   .host-fig2 {
     width: 40%;
+  }
+  .project-foot {
+    /* padding-bottom: 1.5rem; */
+    margin-bottom: 1.2rem;
+  }
+  .foot-head h3 {
+    font-size: 3rem;
+  }
+  footer {
+    padding: 2.5rem;
   }
 }
 
