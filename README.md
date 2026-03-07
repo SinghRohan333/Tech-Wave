@@ -256,13 +256,11 @@ This project intentionally avoids frameworks to focus on core technologies.
 ```
 TechWave
 │
+├── assets
+├── styles
+│   └── style.css
 ├── index.html
-├── style.css
-├── images
-│   ├── banner
-│   ├── icons
-│   └── host
-│
+├── mockup.png
 └── README.md
 ```
 
