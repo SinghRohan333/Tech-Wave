@@ -41,9 +41,9 @@ https://singhrohan333.github.io/Tech-Wave/
 
 Add your website mockup image below for a better visual overview.
 
-```
-![TechWave Website Preview](./mockup.png)
-```
+<p align="center">
+  <img src="./mockup.png" alt="TechWave Preview" width="100%">
+</p>
 
 This mockup gives a quick look at the **overall layout, sections, and design style** of the website.
 
