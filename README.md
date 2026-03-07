@@ -39,8 +39,6 @@ https://singhrohan333.github.io/Tech-Wave/
 
 # 🖼 Preview
 
-Add your website mockup image below for a better visual overview.
-
 <p align="center">
   <img src="./mockup.png" alt="TechWave Preview" width="100%">
 </p>
