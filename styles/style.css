@@ -20,7 +20,10 @@ img {
 }
 
 /* css pattern which won't break across ranges ended*/
-
+html,
+body {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
 }
@@ -39,6 +42,9 @@ nav section ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+nav section ul a {
+  text-decoration: none;
 }
 nav section ul li {
   list-style: none;
