@@ -292,6 +292,21 @@ This project helped strengthen my understanding of:
 
 ---
 
+# 👨‍💻 Author & Contact
+
+**Author:**  
+Rohan Singh
+
+If you'd like to connect, collaborate, or provide feedback, feel free to reach out:
+
+- 💼 **LinkedIn:** https://www.linkedin.com/in/singhrohan333/
+- 💻 **GitHub:** https://github.com/SinghRohan333
+- 📧 **Email:** rohan.singh.syl@gmail.com
+
+I'm always open to discussions, suggestions, and learning opportunities in web development.
+
+---
+
 # 📬 Feedback
 
 If you have suggestions, ideas, or improvements, feel free to open an issue or share feedback.
