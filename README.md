@@ -292,6 +292,35 @@ This project helped strengthen my understanding of:
 
 ---
 
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Steps:
+
+1️⃣ Fork the repository  
+2️⃣ Create a branch  
+3️⃣ Make improvements  
+4️⃣ Submit a Pull Request
+
+---
+
+# 📊 GitHub Activity
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=SinghRohan333&theme=react-dark"/>
+
+</p>
+
+---
+
+# 📜 License
+
+MIT License
+
+---
+
 # 👨‍💻 Author & Contact
 
 **Author:**  
